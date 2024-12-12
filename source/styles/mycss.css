@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.logo img {
+    height: 60%;
+    margin: 13px 0 0 40px;
+}
+
+.nav-list {
+    margin: 19px 0 0 0;
+    transform: translateX(70px);
+}
+
+.nav-list ul{
+    display: flex;
+}
+
+.nav-list li {
+    margin-inline: 15px; 
+}
+
+.nav-list .line1, .line2, .line3 {
+    height: 1px;
+    width: 0;
+    position: absolute;
+    background: #000;
+    transition: .3s ease-in-out;
+}
+
+.link:hover ~ .line1 {
+    width: 26px;
+}
+
+.link:hover ~ .line2 {
+    width: 86px;
+}
+
+.link:hover~.line3 {
+    width: 91px;
+}
+
+.login {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 45px 0 0;
+}
+
+.login button {
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+    padding-right: 3px;
+    height: 28px;
+    width: 130px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background: #ff0059;
+}
+
+.login i {
+    transform: translateX(4px) translateY(1.2px); 
+    
+}
+
+/* section */
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.up-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(90deg, #ffbb00 0%, #ff0059 100%);
+    height: 550px;
+    width: 100%;
+}
+
+.main-img{
+    position: absolute;
+}
+
+.main-img img {
+    width: 830px;
+}
+
+.bg-text p {
+    font-weight: 600;
+    font-size: 22.8vw;
+    color: #ffffff21;
+}
+
+.btn-buynow {
+    position: absolute;
+    top: 87%;
+    right: 4%;
+}
+
+.btn-buynow button {
+    height: 40px;
+    width: 130px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #ffffffec;
+    font-weight: 600;
+    border: solid 2px;
+    border-color: #ffffffa2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-buynow button:hover {
+    border-color: #000;
+    color: #000;
+}
+
+.top-seller {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.down-col {
+    position: relative;
+}
+
+.discription {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 50px 0 50px;
+}
+
+.discription p {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Kanit", sans-serif;
+    color: #ff0059;
+}
+
+.filters {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    height: 30px;
+    width: 120px;
+    background: #ffffff00;
+    backdrop-filter: blur(10px);
+    border: none;
+    outline: none;
+    
+    border-radius: 7px;
+    color: #ff0059;
+    cursor: pointer;
+}
+
+.filters i {
+    font-family: "Kanit", sans-serif;
+    transform: translateX(-10px);
+}
+
+.seller-item-box {
+    position: relative;
+    width: 280px;
+    height: 220px;
+    margin: 20px 15px 0 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.seller-item-box img{
+    position: absolute;
+    left: 15%;
+    bottom: 27%;
+    transition: .5s ease-in-out;
+    width: 70%;
+}
+
+.shoe-name-price {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 53%;
+    padding: 20px;
+}
+
+.shoe-name-price h3 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    width: 140px;
+    transform: translateY(-4px);
+    color: #ff0059;
+}
+
+.price {
+    font-family: "Kanit", sans-serif;
+    color: #ff0059;
+}
+
+.buy {
+    position: absolute;
+    top: 78%;
+    left: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 35px;
+    background: #ff0059;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.price {
+    position: relative;
+    left: -5%;
+}
+
+.buy i {
+    color: #fff;
+}
+
+.bgvideo {
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+}
+
+.bgvideo video {
+    position: absolute;
+    width: 100%;
+    height: 41.5vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -200;
+}
+
+.effect {
+    position: absolute;
+    width: 100%;
+    height: 41.5vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -100;
+    background-color: #00000013;
+}
+
+.seller-item-box:hover img{
+
+    transform: translateY(-20%) translateX(5%) rotate(25deg);
+}
+
+@media(max-width:1025px){
+    .nav-list {
+        display: none;
+    }
+    .price {
+        transform: translateX(10px);
+    }
+    .seller-item-box {
+        margin: 0 10px 0 10px;
+        width: 20%;
+    }
+    .main-img img {
+        width: 85%;
+        transform: translateX(67px);
+    }
+    .seller-item-box img {
+        position: absolute;
+        left: 14%;
+        bottom: 40%;
+        transition: .5s ease-in-out;
+        width: 75%;
+    }
+    .buy {
+        left: 68%;
+        height: 30px;
+        width: 45px;
+    }
+}
+
+@media(max-width:769px){
+    .nav-list {
+        display: none;
+    }
+    .main-img img {
+        width: 100%;
+        transform: translateX(-7px);
+    }
+    .seller-item-box img {
+        left: 18%;
+        bottom: 30%;
+        width: 110px;
+    }
+    .seller-item-box {
+        margin: 0 10px 0 10px;
+        width: 22%;
+        height: 150px;
+    }
+    .price {
+        transform: translateY(10px);
+    }
+    .shoe-name-price h3{
+        position: absolute;
+        top: 95px;
+        font-size: 18px;
+    }
+    .buy {
+        left: 68%;
+        top: 72%;
+        width: 35px;
+    }
+}
+@media(max-width:694px) {
+    .top-seller {
+        display: flex;
+        flex-direction: column;
+    }
+    .bgvideo video {
+        position: absolute;
+        width: 100%;
+        height: 162.5vh;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -200;
+    }
+    .filters {
+        transform: translateY(15px);
+    }
+    .effect {
+        position: absolute;
+        width: 100%;
+        height: 162.5vh;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -100;
+        background-color: #00000013;
+    }
+    .seller-item-box img {
+        position: absolute;
+        left: 15%;
+        bottom: 27%;
+        transition: .5s ease-in-out;
+        width: 39vw;
+    }
+    .seller-item-box {
+        width: 54vw;
+        height: 46vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
+        border-radius: 20px;
+        background: transparent;
+        margin: 20px 0 40px 0;
+        left: 20%;
+    }
+    .shoe-name-price h3 {
+        font-size: 4.8vw;
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+    .buy {
+        height: 10vw;
+        width: 10vw;
+        top: 90%;
+        left: 90%;
+    }
+    .price {
+        font-size: 4vw;
+    }
+}
